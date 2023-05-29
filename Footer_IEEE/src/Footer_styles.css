@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.APP {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer {
+    background-color: #f7f7f8;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 30px 2px;
+}
+
+.container-1 {
+    display: flex;
+}
+
+.footer-main {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.col-1 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.footer-main p {
+    font-size: 12px;
+    text-align: justify;
+
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 0 10px;
+    padding: 10px;
+
+}
+
+.footer-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.col-1 ul li a:hover {
+    color: #1D3557;
+    font-weight: 600;
+    padding-left: 2px;
+    transition: all 0.3s ease;
+}
+
+.footer-links li h2 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.footer-links h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 60px;
+    border: 2px solid #000000;
+    border-radius: 7px 7px 7px 7px;
+    height: 0.2px;
+    background: #000000;
+}
+
+.bottom-content {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: -15px;
+}
+
+@media screen and (max-width:576px) {
+    .APP {
+        min-height: 50vh;
+    }
+
+    .footer {
+        position: sticky;
+        display: grid;
+        position: -webkit-sticky;
+    }
+
+    .container-1 {
+        display: block;
+    }
+
+    .bottom {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .container-1 {
+        display: block;
+    }
+
+    .footer {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+    .bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .container-1 {
+        display: block;
+    }
+
+    .footer {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+    .bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {}
